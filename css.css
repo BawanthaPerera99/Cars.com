@@ -1,0 +1,359 @@
+/*---------------------------------------------------Main Page--------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+     display: flex;
+     width: auto;
+     height: 800px;
+     background-size:cover;
+     animation: animate 16s ease-in-out infinite;
+}
+
+/* animations and transformations for key frame */
+@keyframes animate {
+    0% {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car1.jpg");
+    }
+    25% {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car2.jpg");
+    }
+    50% {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car3.jpg");
+    }
+    75% {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car4.jpg");
+    }
+    100% {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car5.jpg");
+    }
+}
+
+.main{
+    width: 100%;
+}
+
+.main ul{
+    list-style: none;
+    float: right;
+    margin-left: 15px;
+    position: relative;
+
+}
+
+ul li{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+ul li a{
+    font-family: "Century Gothic", serif ;
+    font-size: 20px;
+    text-decoration:none;
+    color: white;
+    padding: 5px 20px;
+    border:1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 40px;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.title{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: white;
+    font-size: 80px;
+}
+
+.button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    margin-right: 20px;
+    border: 1px solid #ffffff;
+    padding: 20px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    background-color: rgba(2, 0, 1, 0.89);
+    height: 320px;
+    width: 100vw;
+    font-family: "monospace", serif;
+    font-size: 25px;
+    padding-top: 50px;
+    color: white;
+}
+
+.footer-content{
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socials img{
+    padding-right: 15px;
+    margin-top: 50px;
+    width: 50px;
+    height: auto;
+}
+
+footer #up{
+    font-family: "Brush Script MT", serif;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+footer #down{
+    margin-top: 70px;
+    font-size: 15px;
+    color: rgb(194, 182, 173);
+}
+
+.box{
+    float: right;
+    margin-right: 50px;
+}
+
+/*---------------------------------------------------ABOUT US--------------------------------------------------------*/
+.team-selection{
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px;
+}
+
+.team-selection h1{
+    margin-top: 70px;
+    margin-left: 220px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 40px;
+}
+
+#aboutus{
+    background: #34495e;
+}
+
+/* Styling the border */
+.border{
+    display:block;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+    margin: 0 auto 60px 420px;
+}
+
+.person {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.person a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.team-selection nav{
+    margin-left: 110px;
+}
+
+.person a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.person a:hover > img{
+    filter: none;
+}
+
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section:target{
+    height: auto;
+}
+
+.name{
+    font-family: "Century Gothic", serif;
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.section .border{
+    margin-left: 250px;
+}
+
+.space{
+    margin-bottom: 50px;
+    font-family: "Century Gothic", serif;
+}
+
+/*---------------------------------------------------SUBSCRIBE--------------------------------------------------------*/
+
+/* Creating a background-image with gradient */
+#subscribe-bg{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car4.jpg");
+    width: 100%;
+    height: 800px;
+    background-size:cover;
+}
+
+.contains{
+    padding: 120px 50px;
+    margin-right: 200px;
+    text-align: center;
+    color: white;
+}
+
+.form{
+    margin-top: 180px;
+    margin-left: 130px ;
+}
+
+.contains p{
+    max-width: 580px;
+    margin: 35px auto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.email-section{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box .btn{
+   border: none;
+    outline: none;
+}
+
+.email-box{
+    width: 0;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.email-section:hover > .email-box, .email-box:focus{
+    width: 300px;
+    padding: 0 15px;
+}
+
+.btns{
+    background-image: linear-gradient(-90deg, #4834d4, #eb4d4b);
+    color: white;
+    margin: 0 5px;
+    padding: 0 25px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btns:hover{
+    background-image: linear-gradient(-90deg, #eb4d4b, #4834d4);
+}
+
+.contains h1{
+    font-size: 40px;
+}
+
+.contains p{
+    font-size: 15px;
+}
+
+/*--------------------------------------------------------BLOG--------------------------------------------------------*/
+
+/* Creating a background-image with gradient */
+#blogbody{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("car5.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.blog{
+    border: 20px solid #ffffff;
+    padding: 90px;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.date{
+    color: white;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.paragraph{
+    border-left: 5px solid #2370a5;
+    padding-left: 5px;
+}
+
+h2{
+    font-size: 2.0rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+p{
+    color: white;
+    font-weight: 550;
+}
+
